@@ -43,14 +43,12 @@ export function FeatureCard({ feature }: FeatureCardProps) {
   // chip
   return (
     <div className="rounded-xl p-4 bg-muted/50 border border-border flex items-center gap-3">
-      <div className="text-base text-muted-foreground/60">
+      <div className="text-base text-brand-accent/70">
         <IconComponent />
       </div>
       <div>
-        <div className="text-sm font-semibold text-muted-foreground">
-          {title}
-        </div>
-        <div className="text-xs text-muted-foreground/60 leading-relaxed">
+        <div className="text-sm font-semibold text-foreground">{title}</div>
+        <div className="text-xs text-muted-foreground leading-relaxed">
           {description}
         </div>
       </div>
