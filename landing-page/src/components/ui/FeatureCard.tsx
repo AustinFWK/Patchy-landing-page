@@ -42,7 +42,7 @@ export function FeatureCard({ feature }: FeatureCardProps) {
 
   // chip
   return (
-    <div className="rounded-xl p-4 bg-white/[0.03] border border-white/[0.06] flex items-center gap-3">
+    <div className="rounded-xl p-4 bg-muted/50 border border-border flex items-center gap-3">
       <div className="text-base text-muted-foreground/60">
         <IconComponent />
       </div>
