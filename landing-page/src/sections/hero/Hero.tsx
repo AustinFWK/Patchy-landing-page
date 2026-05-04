@@ -43,6 +43,7 @@ export default function Hero() {
               src="/patch_notes.webp"
               alt="Patch notes preview"
               className="w-full"
+              loading="lazy"
             />
             <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#313338] to-transparent" />
           </div>
