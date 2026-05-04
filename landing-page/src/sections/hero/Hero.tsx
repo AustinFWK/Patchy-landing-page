@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import Statistics from "@/components/ui/Statistics";
 
 export default function Hero() {
   return (

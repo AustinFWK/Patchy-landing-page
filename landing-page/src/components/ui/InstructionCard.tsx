@@ -6,7 +6,7 @@ interface InstructionStepsProps {
 }
 
 export function InstructionSteps({ instruction }: InstructionStepsProps) {
-  const { step, title, description } = instruction;
+  const { step, title, description, command } = instruction;
   return (
     <div
       className={`grid gap-12 items-center md:grid-cols-2 
@@ -21,7 +21,18 @@ export function InstructionSteps({ instruction }: InstructionStepsProps) {
           <h3>{title}</h3>
 
           <p className="text-muted-foreground text-sm leading-relaxed">
-            {description}
+            {command
+              ? description.split("{command}").map((part, i) => (
+                  <span key={i}>
+                    {part}
+                    {i === 0 && (
+                      <code className="text-sm font-mono bg-muted border border-border rounded px-1.5 py-0.5 text-brand-accent">
+                        {command}
+                      </code>
+                    )}
+                  </span>
+                ))
+              : description}
           </p>
         </CardContent>
       </Card>

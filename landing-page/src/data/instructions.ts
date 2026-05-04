@@ -2,6 +2,7 @@ export type Instruction = {
   step: string;
   title: string;
   description: string;
+  command?: string;
 };
 
 export const instructions: Instruction[] = [
@@ -14,7 +15,8 @@ export const instructions: Instruction[] = [
     step: "2",
     title: "Choose a channel",
     description:
-      'Type "!setchannel valorant" in any channel to set it as the destination for patch notes.',
+      "Type {command} in any channel to set it as the destination for patch notes.",
+    command: "!setchannel",
   },
   {
     step: "3",
