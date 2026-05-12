@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
 
         {/* Right: patch notes screenshot */}
-        <div className="rounded-xl overflow-hidden border border-border">
+        <div className="hidden md:block rounded-xl overflow-hidden border border-border">
           <div className="bg-[#1e1f22] px-4 py-2.5 flex items-center gap-2">
             <div className="flex gap-1.5">
               <span className="w-2.5 h-2.5 rounded-full bg-white/20" />
