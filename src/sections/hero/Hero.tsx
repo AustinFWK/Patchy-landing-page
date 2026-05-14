@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
+import Statistics from "@/components/Statistics";
 
 export default function Hero() {
   return (
@@ -12,6 +13,7 @@ export default function Hero() {
             This Discord Bot gives you instant, clean, easy-to-read patch notes
             delivered straight to your Discord server.
           </p>
+          <Statistics />
           <a
             href="https://discord.com/oauth2/authorize?client_id=1204815740918693898"
             target="_blank"
